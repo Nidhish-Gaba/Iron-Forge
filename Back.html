@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Back Training | Iron Forge Gym</title>
+    <link rel="stylesheet" href="Back.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="workout-progress.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script defer src="workout-progress.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1>Back <span class="accent">Training</span></h1>
+        <p>Build width and thickness with these powerhouse compound movements.</p>
+    </header>
+
+    <!-- Progress Bar -->
+    <div class="progress-container">
+        <div class="progress-header">
+            <h3>Routine Progress</h3>
+            <span class="progress-percentage" id="progress-percentage">0%</span>
+        </div>
+        <div class="progress-track">
+            <div class="progress-fill" id="progress-fill"></div>
+        </div>
+    </div>
+
+    <main>
+        <section class="exercise-card">
+            <div class="exercise-content">
+                <h2>Conventional Deadlifts</h2>
+                <div class="exercise-stats">
+                    <span>3 Sets</span>
+                    <span>5-8 Reps</span>
+                </div>
+                <ol>
+                    <li>Stand with feet hip-width apart, mid-foot under the barbell.</li>
+                    <li>Bend at the hips and knees to grip the bar with a flat back.</li>
+                    <li>Drive through your heels and stand up straight, keeping the bar close to your shins.</li>
+                    <li>Lower the bar back to the floor with control, maintaining a neutral spine.</li>
+                </ol>
+                <div class="exercise-completion">
+                    <input type="checkbox" id="back-1" class="exercise-checkbox">
+                    <label for="back-1" class="checkbox-label">Mark as Complete</label>
+                </div>
+            </div>
+            <div class="exercise-image">
+                <img src="https://www.majorfitness.com/cdn/shop/articles/home-gym-deadlift-workout.jpg?v=1720765495" alt="Deadlift" class="bw-img">
+            </div>
+        </section>
+
+        <section class="exercise-card">
+            <div class="exercise-content">
+                <h2>Bent-Over Barbell Rows</h2>
+                <div class="exercise-stats">
+                    <span>3 Sets</span>
+                    <span>8-12 Reps</span>
+                </div>
+                <ol>
+                    <li>Hold a barbell with an overhand grip, knees slightly bent.</li>
+                    <li>Hinge at the waist until your torso is nearly parallel to the floor.</li>
+                    <li>Pull the bar toward your lower ribs, squeezing your shoulder blades together.</li>
+                    <li>Slowly lower the weight back to the starting position.</li>
+                </ol>
+                <div class="exercise-completion">
+                    <input type="checkbox" id="back-2" class="exercise-checkbox">
+                    <label for="back-2" class="checkbox-label">Mark as Complete</label>
+                </div>
+            </div>
+            <div class="exercise-image">
+                <img src="https://images.unsplash.com/photo-1605296867304-46d5465a13f1?auto=format&fit=crop&q=80&w=500" alt="Barbell Row" class="bw-img">
+            </div>
+        </section>
+
+        <section class="exercise-card">
+            <div class="exercise-content">
+                <h2>Wide-Grip Lat Pull-downs</h2>
+                <div class="exercise-stats">
+                    <span>3 Sets</span>
+                    <span>10-12 Reps</span>
+                </div>
+                <ol>
+                    <li>Sit at the machine and grip the bar wider than shoulder-width.</li>
+                    <li>Lean back slightly and pull the bar down toward your upper chest.</li>
+                    <li>Focus on pulling with your elbows and engaging your lats.</li>
+                    <li>Slowly return the bar to the top for a full stretch.</li>
+                </ol>
+                <div class="exercise-completion">
+                    <input type="checkbox" id="back-3" class="exercise-checkbox">
+                    <label for="back-3" class="checkbox-label">Mark as Complete</label>
+                </div>
+            </div>
+            <div class="exercise-image">
+                <img src="https://images.unsplash.com/photo-1590487988256-9ed24133863e?auto=format&fit=crop&q=80&w=500" alt="Lat Pulldown" class="bw-img">
+            </div>
+        </section>
+
+        <section class="exercise-card">
+            <div class="exercise-content">
+                <h2>One-Arm Dumbbell Rows</h2>
+                <div class="exercise-stats">
+                    <span>3 Sets</span>
+                    <span>12 Reps Per Arm</span>
+                </div>
+                <ol>
+                    <li>Place one knee and hand on a bench for support, keeping your back flat.</li>
+                    <li>Hold a dumbbell in the opposite hand, hanging straight down.</li>
+                    <li>Pull the dumbbell toward your hip, keeping your elbow close to your body.</li>
+                    <li>Lower the weight with control and repeat for the other side.</li>
+                </ol>
+                <div class="exercise-completion">
+                    <input type="checkbox" id="back-4" class="exercise-checkbox">
+                    <label for="back-4" class="checkbox-label">Mark as Complete</label>
+                </div>
+            </div>
+            <div class="exercise-image">
+                <img src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?auto=format&fit=crop&q=80&w=500" alt="Dumbbell Row" class="bw-img">
+            </div>
+        </section>
+        
+        <div style="text-align: center; margin-top: 2rem; margin-bottom: 4rem;">
+            <a href="index.html" class="back-btn">← Back to Forge</a>
+        </div>
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abs Training | Iron Forge Gym</title>
+    <link rel="stylesheet" href="abs.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="workout-progress.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script defer src="workout-progress.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1>Abs <span class="accent">Training</span></h1>
+        <p>Build a stable, powerful midsection with these essential movements.</p>
+    </header>
+
+    <!-- Progress Bar -->
+    <div class="progress-container">
+        <div class="progress-header">
+            <h3>Routine Progress</h3>
+            <span class="progress-percentage" id="progress-percentage">0%</span>
+        </div>
+        <div class="progress-track">
+            <div class="progress-fill" id="progress-fill"></div>
+        </div>
+    </div>
+
+    <main>
+        <section class="exercise-card">
+            <div class="exercise-content">
+                <h2>Abdominal Crunches</h2>
+                <div class="exercise-stats">
+                    <span>3 Sets</span>
+                    <span>15-20 Reps</span>
+                </div>
+                <ol>
+                    <li>Lie on your back with your knees bent and feet flat on the floor.</li>
+                    <li>Place your hands lightly behind your head or across your chest.</li>
+                    <li>Curl your upper body toward your knees, contracting your abs.</li>
+                    <li>Lower back down slowly, keeping tension on the core throughout.</li>
+                </ol>
+                <div class="exercise-completion">
+                    <input type="checkbox" id="abs-1" class="exercise-checkbox">
+                    <label for="abs-1" class="checkbox-label">Mark as Complete</label>
+                </div>
+            </div>
+            <div class="exercise-image">
+                <img src="https://images.unsplash.com/photo-1517130038641-a774d04afb3c?auto=format&fit=crop&q=80&w=500" alt="Crunches" class="bw-img">
+            </div>
+        </section>
+
+        <section class="exercise-card">
+            <div class="exercise-content">
+                <h2>Forearm Plank</h2>
+                <div class="exercise-stats">
+                    <span>3 Sets</span>
+                    <span>45-60 Secs</span>
+                </div>
+                <ol>
+                    <li>Place forearms on the floor with elbows aligned below shoulders.</li>
+                    <li>Extend legs behind you, resting on your toes.</li>
+                    <li>Keep your body in a straight line from head to heels.</li>
+                    <li>Engage your core and hold for 30–60 seconds without dropping your hips.</li>
+                </ol>
+                <div class="exercise-completion">
+                    <input type="checkbox" id="abs-2" class="exercise-checkbox">
+                    <label for="abs-2" class="checkbox-label">Mark as Complete</label>
+                </div>
+            </div>
+            <div class="exercise-image">
+                <img src="https://media.istockphoto.com/id/526131316/photo/fitness-training-athletic-sporty-man-doing-plank-exercise-in-gym.jpg?s=612x612&w=0&k=20&c=hnagfEHuEFirHQZnJ76BAQz-52CH1b8UvQq8W5kSB9I=" alt="Plank" class="bw-img">
+            </div>
+        </section>
+
+        <section class="exercise-card">
+            <div class="exercise-content">
+                <h2>Hanging Leg Raises</h2>
+                <div class="exercise-stats">
+                    <span>3 Sets</span>
+                    <span>10-12 Reps</span>
+                </div>
+                <ol>
+                    <li>Hang from a pull-up bar with an overhand grip, arms straight.</li>
+                    <li>Keep your legs straight and engage your lower abdominals.</li>
+                    <li>Slowly lift your legs until they are parallel to the floor.</li>
+                    <li>Lower them back down with control, avoiding any swinging motion.</li>
+                </ol>
+                <div class="exercise-completion">
+                    <input type="checkbox" id="abs-3" class="exercise-checkbox">
+                    <label for="abs-3" class="checkbox-label">Mark as Complete</label>
+                </div>
+            </div>
+            <div class="exercise-image">
+                <img src="https://cdn.mos.cms.futurecdn.net/fEiYxZ4R9yzqCvawC6H5jS.jpg" alt="Leg Raises" class="bw-img">
+            </div>
+        </section>
+
+        <section class="exercise-card">
+            <div class="exercise-content">
+                <h2>Russian Twists</h2>
+                <div class="exercise-stats">
+                    <span>3 Sets</span>
+                    <span>20 Reps (Total)</span>
+                </div>
+                <ol>
+                    <li>Sit on the floor with your knees bent and feet flat or slightly elevated for a challenge.</li>
+                    <li>Lean back slightly while keeping your spine straight to engage your core.</li>
+                    <li>Clasp your hands together and rotate your torso from side to side.</li>
+                    <li>Touch the floor on each side beside your hips, maintaining a controlled pace.</li>
+                </ol>
+                <div class="exercise-completion">
+                    <input type="checkbox" id="abs-4" class="exercise-checkbox">
+                    <label for="abs-4" class="checkbox-label">Mark as Complete</label>
+                </div>
+            </div>
+            <div class="exercise-image">
+                <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&q=80&w=500" alt="Russian Twists" class="bw-img">
+            </div>
+        </section>
+        
+        <div style="text-align: center; margin-top: 2rem; margin-bottom: 4rem;">
+            <a href="index.html" class="back-btn">← Back to Forge</a>
+        </div>
+    </main>
+
+</body>
+</html>

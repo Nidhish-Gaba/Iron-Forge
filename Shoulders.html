@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoulder Training | Iron Forge Gym</title>
+    <link rel="stylesheet" href="Shoulder.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="workout-progress.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script defer src="workout-progress.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1>Shoulder <span class="accent">Training</span></h1>
+        <p>Build boulder shoulders and overhead strength with these key lifts.</p>
+    </header>
+
+    <!-- Progress Bar -->
+    <div class="progress-container">
+        <div class="progress-header">
+            <h3>Routine Progress</h3>
+            <span class="progress-percentage" id="progress-percentage">0%</span>
+        </div>
+        <div class="progress-track">
+            <div class="progress-fill" id="progress-fill"></div>
+        </div>
+    </div>
+
+    <main>
+        <section class="exercise-card">
+            <div class="exercise-content">
+                <h2>Barbell Overhead Press</h2>
+                <div class="exercise-stats">
+                    <span>3 Sets</span>
+                    <span>8-10 Reps</span>
+                </div>
+                <ol>
+                    <li>Stand with feet shoulder-width apart, holding a barbell at shoulder level.</li>
+                    <li>Brace your core and press the bar directly overhead until arms are locked.</li>
+                    <li>Keep your head tucked back as the bar passes, then push it forward "through the window."</li>
+                    <li>Slowly lower the bar back to your upper chest under control.</li>
+                </ol>
+                <div class="exercise-completion">
+                    <input type="checkbox" id="shoulders-1" class="exercise-checkbox">
+                    <label for="shoulders-1" class="checkbox-label">Mark as Complete</label>
+                </div>
+            </div>
+            <div class="exercise-image">
+                <img src="https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?auto=format&fit=crop&q=80&w=500" alt="Overhead Press" class="bw-img">
+            </div>
+        </section>
+
+        <section class="exercise-card">
+            <div class="exercise-content">
+                <h2>Dumbbell Lateral Raises</h2>
+                <div class="exercise-stats">
+                    <span>3 Sets</span>
+                    <span>12-15 Reps</span>
+                </div>
+                <ol>
+                    <li>Stand tall holding dumbbells by your sides, palms facing inward.</li>
+                    <li>With a slight bend in your elbows, lift the weights out to your sides.</li>
+                    <li>Pause at shoulder height to feel the contraction in your side delts.</li>
+                    <li>Lower the weights back down slowly to the starting position.</li>
+                </ol>
+                <div class="exercise-completion">
+                    <input type="checkbox" id="shoulders-2" class="exercise-checkbox">
+                    <label for="shoulders-2" class="checkbox-label">Mark as Complete</label>
+                </div>
+            </div>
+            <div class="exercise-image">
+                <img src="https://images.unsplash.com/photo-1583454122781-8cf8f5af9d2b?auto=format&fit=crop&q=80&w=500" alt="Lateral Raises" class="bw-img">
+            </div>
+        </section>
+
+        <section class="exercise-card">
+            <div class="exercise-content">
+                <h2>Dumbbell Front Raises</h2>
+                <div class="exercise-stats">
+                    <span>3 Sets</span>
+                    <span>12 Reps</span>
+                </div>
+                <ol>
+                    <li>Hold dumbbells in front of your thighs with palms facing your body.</li>
+                    <li>Lift one weight directly in front of you until it is slightly above shoulder level.</li>
+                    <li>Keep your arm straight and avoid swinging your body for momentum.</li>
+                    <li>Lower slowly and repeat with the other arm.</li>
+                </ol>
+                <div class="exercise-completion">
+                    <input type="checkbox" id="shoulders-3" class="exercise-checkbox">
+                    <label for="shoulders-3" class="checkbox-label">Mark as Complete</label>
+                </div>
+            </div>
+            <div class="exercise-image">
+                <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&q=80&w=500" alt="Front Raises" class="bw-img">
+            </div>
+        </section>
+
+        <section class="exercise-card">
+            <div class="exercise-content">
+                <h2>Face Pulls</h2>
+                <div class="exercise-stats">
+                    <span>3 Sets</span>
+                    <span>15 Reps</span>
+                </div>
+                <ol>
+                    <li>Set a cable machine to face height with a rope attachment.</li>
+                    <li>Pull the rope towards your forehead, pulling the ends apart as you go.</li>
+                    <li>Squeeze your shoulder blades together at the peak of the movement.</li>
+                    <li>Return to the starting position with a controlled stretch.</li>
+                </ol>
+                <div class="exercise-completion">
+                    <input type="checkbox" id="shoulders-4" class="exercise-checkbox">
+                    <label for="shoulders-4" class="checkbox-label">Mark as Complete</label>
+                </div>
+            </div>
+            <div class="exercise-image">
+                <img src="https://images.unsplash.com/photo-1590487988256-9ed24133863e?auto=format&fit=crop&q=80&w=500" alt="Face Pulls" class="bw-img">
+            </div>
+        </section>
+        
+        <div style="text-align: center; margin-top: 2rem; margin-bottom: 4rem;">
+            <a href="index.html" class="back-btn">← Back to Forge</a>
+        </div>
+    </main>
+
+</body>
+</html>

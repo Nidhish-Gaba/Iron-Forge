@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardio Exercises | Iron Forge Gym</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="cardio.css">
+</head>
+<body>
+
+    <!-- Sticky Workout Timer -->
+    <div id="workout-timer" class="sticky-timer">
+        <div class="timer-icon"><i class="fa-solid fa-stopwatch"></i></div>
+        <span id="timer-display">10:00</span>
+        <div class="timer-btns">
+            <button id="timer-control" onclick="toggleTimer()">
+                <i class="fa-solid fa-play"></i>
+            </button>
+            <button id="timer-reset" onclick="resetTimer()" title="Reset Timer">
+                <i class="fa-solid fa-rotate-left"></i>
+            </button>
+        </div>
+        <audio id="beep-sound" src="https://actions.google.com/sounds/v1/alarms/beep_short.ogg"></audio>
+    </div>
+
+    <nav class="simple-nav">
+        <div class="nav-left">
+            <a href="index.html" class="back-btn"><i class="fa-solid fa-arrow-left"></i> BACK TO HOME</a>
+        </div>
+        <div class="nav-right">
+            <div class="logo">IRON <span class="highlight">FORGE</span></div>
+        </div>
+    </nav>
+
+    <header class="cardio-hero">
+        <div class="container">
+            <h1>Cardio <span class="highlight">Training</span></h1>
+            <p>Complete every movement to forge elite endurance.</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Success Message -->
+        <div id="mission-message" class="mission-success">
+            Heart’s racing, goals chasing. Cardio conquered! 🏆
+        </div>
+
+        <div class="exercise-grid">
+            <!-- Exercise Cards -->
+            <div class="ex-card">
+                <div class="ex-icon"><i class="fa-solid fa-person-running"></i></div>
+                <h3>Running</h3>
+                <div class="ex-steps">
+                    <ol>
+                        <li>Maintain an upright posture.</li>
+                        <li>Land softly on the mid-foot.</li>
+                    </ol>
+                </div>
+                <label class="done-label">
+                    <input type="checkbox" class="ex-check"> Mark as Done
+                </label>
+            </div>
+
+            <div class="ex-card">
+                <div class="ex-icon"><i class="fa-solid fa-bicycle"></i></div>
+                <h3>Cycling</h3>
+                <div class="ex-steps">
+                    <ol>
+                        <li>Adjust seat height correctly.</li>
+                        <li>Pedal in smooth, circular motions.</li>
+                    </ol>
+                </div>
+                <label class="done-label">
+                    <input type="checkbox" class="ex-check"> Mark as Done
+                </label>
+            </div>
+
+            <div class="ex-card">
+                <div class="ex-icon"><i class="fa-solid fa-arrows-up-down-left-right"></i></div>
+                <h3>Jumping Jacks</h3>
+                <div class="ex-steps">
+                    <ol>
+                        <li>Swing arms fully above head.</li>
+                        <li>Stay on the balls of your feet.</li>
+                    </ol>
+                </div>
+                <label class="done-label">
+                    <input type="checkbox" class="ex-check"> Mark as Done
+                </label>
+            </div>
+
+            <div class="ex-card">
+                <div class="ex-icon"><i class="fa-solid fa-rug"></i></div>
+                <h3>Jump Rope</h3>
+                <div class="ex-steps">
+                    <ol>
+                        <li>Rotate from wrists only.</li>
+                        <li>Jump just 1-2 inches off floor.</li>
+                    </ol>
+                </div>
+                <label class="done-label">
+                    <input type="checkbox" class="ex-check"> Mark as Done
+                </label>
+            </div>
+
+            <div class="ex-card">
+                <div class="ex-icon"><i class="fa-solid fa-fire-flame-curved"></i></div>
+                <h3>Burpees</h3>
+                <div class="ex-steps">
+                    <ol>
+                        <li>Drop into a deep squat.</li>
+                        <li>Explode upward into a jump.</li>
+                    </ol>
+                </div>
+                <label class="done-label">
+                    <input type="checkbox" class="ex-check"> Mark as Done
+                </label>
+            </div>
+
+            <div class="ex-card">
+                <div class="ex-icon"><i class="fa-solid fa-mountain"></i></div>
+                <h3>Mountain Climbers</h3>
+                <div class="ex-steps">
+                    <ol>
+                        <li>Keep wrists under shoulders.</li>
+                        <li>Drive knees rapidly to chest.</li>
+                    </ol>
+                </div>
+                <label class="done-label">
+                    <input type="checkbox" class="ex-check"> Mark as Done
+                </label>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Iron Forge Gym | Built for Web Development Project.</p>
+    </footer>
+
+    <script src="timer.js"></script>
+</body>
+</html>

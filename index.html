@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iron Forge Gym | Premium Fitness</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style1.css">
+    <script src="auth.js"></script>
+</head>
+<body>
+
+    <header class="hero">
+        <div class="overlay">
+            <nav class="navbar">
+                <div class="logo">IRON <span class="highlight">FORGE</span></div>
+                <ul class="nav-links">
+                    <li><a href="#bmi">BMI</a></li>
+                    <li><a href="#strength">Strength</a></li>
+                    <li><a href="#cardio">Cardio</a></li>
+                    <li><a href="#diet">Diet Plans</a></li>
+                    <li><a href="#" onclick="window.IronForgeAuth.logout(event)">Logout</a></li>
+                </ul>
+            </nav>
+            <div class="hero-content">
+                <span class="subtitle">Push Your Limits</span>
+                <h1>Forge Your <span class="highlight">Legacy</span></h1>
+                <p>High-performance training and science-based nutrition plans.</p>
+                <div class="hero-btns">
+                    <a href="#strength" class="btn btn-primary">Start Training</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- BMI Calculator Section -->
+    <section id="bmi" class="bg-dark-grey">
+        <div class="container text-center">
+            <h2 class="section-title">Check Your <span class="highlight">BMI</span></h2>
+            <p class="section-desc">Quickly calculate your Body Mass Index to better track your progress.</p>
+            
+            <div class="diet-card" style="margin: 0 auto; max-width: 500px;">
+                <div class="diet-header">
+                    <h3>BMI Calculator</h3>
+                </div>
+                <div class="diet-cta">
+                    <div class="bmi-inputs">
+                        <input type="number" id="weight" placeholder="Weight (kg)">
+                        <input type="number" id="height" placeholder="Height (cm)">
+                    </div>
+                    <button onclick="calculateBMI()" class="btn btn-primary" style="width: 100%; cursor: pointer; border: none; margin-top: 15px;">Calculate Now</button>
+                    
+                    <div id="bmi-result">
+                        <h4 id="bmi-value"></h4>
+                        <p id="bmi-status"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Strength Section (Muscle Map) -->
+    <section id="strength" class="container">
+        <div class="text-center">
+            <h2 class="section-title">Muscle <span class="highlight">Targeting</span></h2>
+            <p class="section-desc">Click a muscle group on the diagram to reveal specialized training routines.</p>
+        </div>
+        
+        <div class="muscle-map-wrapper">
+            <!-- Interactive SVG Body Diagram -->
+            <div class="map-container">
+                <svg viewBox="0 0 200 240" class="muscle-svg">
+                    <!-- Head/Neck -->
+                    <circle cx="100" cy="25" r="12" fill="#222" stroke="#444"/>
+                    <!-- Chest -->
+                    <path id="chest" class="muscle-unit" d="M75 50 L125 50 L130 80 L70 80 Z" />
+                    <!-- Abs -->
+                    <path id="abs" class="muscle-unit" d="M80 85 L120 85 L115 125 L85 125 Z" />
+                    <!-- Biceps (Left & Right share same ID for logic) -->
+                    <path id="biceps" class="muscle-unit" d="M55 55 L68 55 L65 90 L50 85 Z" />
+                    <path id="biceps" class="muscle-unit" d="M132 55 L145 55 L150 85 L135 90 Z" />
+                    <!-- Shoulders -->
+                    <path id="shoulders" class="muscle-unit" d="M60 45 Q70 40 75 50 L68 65 Z" />
+                    <path id="shoulders" class="muscle-unit" d="M140 45 Q130 40 125 50 L132 65 Z" />
+                    <!-- Legs -->
+                    <path id="legs" class="muscle-unit" d="M80 130 L98 130 L95 185 L75 185 Z" />
+                    <path id="legs" class="muscle-unit" d="M102 130 L120 130 L125 185 L105 185 Z" />
+                </svg>
+            </div>
+
+            <!-- Dynamic Exercise Display -->
+            <div id="exercise-display" class="exercise-info-box">
+                <div id="placeholder-text" class="text-center">
+                    <i class="fa-solid fa-hand-pointer" style="font-size: 2.5rem; color: var(--primary); margin-bottom: 15px;"></i>
+                    <h3>Select A Muscle</h3>
+                    <p>Click the diagram to view exercises.</p>
+                </div>
+                <div id="active-content" style="display: none;">
+                    <h3 id="selected-muscle" class="highlight" style="font-size: 2rem; margin-bottom: 10px;"></h3>
+                    <p id="muscle-description" style="color: var(--text-grey); margin-bottom: 25px;"></p>
+                    <div id="exercise-links"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cardio Section -->
+    <section id="cardio" class="bg-dark-grey">
+        <div class="container text-center">
+            <h2 class="section-title">Cardio <span class="highlight">Exercises</span></h2>
+            <div class="diet-card" style="margin: 0 auto; max-width: 600px;">
+                <div class="diet-header">
+                    <h3>Endurance & HIIT</h3>
+                </div>
+                <div class="diet-cta">
+                    <p>Explore a variety of high-intensity and steady-state exercises designed to burn fat and improve stamina.</p>
+                    <a href="cardio.html" class="btn btn-primary">View Exercises</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Diet Section -->
+    <section id="diet" class="container text-center">
+        <h2 class="section-title">Diet <span class="highlight">Plans</span></h2>
+        <div class="diet-container">
+            <div class="diet-card">
+                <div class="diet-header"><h3>Bulking</h3><p>Bulking & Power</p></div>
+                <div class="diet-cta">
+                    <p>Increase muscle mass with a high-calorie nutrition strategy.</p>
+                    <a href="Bulk.html" class="btn btn-primary">View Plan</a>
+                </div>
+            </div>
+            <div class="diet-card loss">
+                <div class="diet-header"><h3>Cutting</h3><p>Shred & Tone</p></div>
+                <div class="diet-cta">
+                    <p>Lose fat while maintaining muscle with a calorie-deficit plan.</p>
+                    <a href="Cut.html" class="btn btn-primary">View Plan</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Iron Forge Gym. Built for Web Development Project.</p>
+    </footer>
+
+    <script src="bmi.js"></script>
+</body>
+</html>

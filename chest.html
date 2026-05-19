@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chest Training | Iron Forge Gym</title>
+    <link rel="stylesheet" href="chest.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="workout-progress.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script defer src="workout-progress.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1>Chest <span class="accent">Exercises</span></h1>
+        <p>A complete routine to forge a powerful and defined chest.</p>
+    </header>
+
+    <!-- Progress Bar -->
+    <div class="progress-container">
+        <div class="progress-header">
+            <h3>Routine Progress</h3>
+            <span class="progress-percentage" id="progress-percentage">0%</span>
+        </div>
+        <div class="progress-track">
+            <div class="progress-fill" id="progress-fill"></div>
+        </div>
+    </div>
+
+    <main>
+        <section class="exercise-card">
+            <div class="exercise-content">
+                <h2>Barbell Bench Press</h2>
+                <div class="exercise-stats">
+                    <span>3 Sets</span>
+                    <span>8-10 Reps</span>
+                </div>
+                <ol>
+                    <li>Lie flat on your back on a standard weight bench.</li>
+                    <li>Grip the barbell with your hands slightly wider than shoulder-width.</li>
+                    <li>Inhale and slowly lower the bar until it lightly touches your mid-chest.</li>
+                    <li>Exhale as you push the bar powerfully back to the starting position.</li>
+                </ol>
+                <div class="exercise-completion">
+                    <input type="checkbox" id="chest-1" class="exercise-checkbox">
+                    <label for="chest-1" class="checkbox-label">Mark as Complete</label>
+                </div>
+            </div>
+            <div class="exercise-image">
+                <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&q=80" alt="Bench Press" class="bw-img">
+            </div>
+        </section>
+
+        <section class="exercise-card">
+            <div class="exercise-content">
+                <h2>Incline Dumbbell Press</h2>
+                <div class="exercise-stats">
+                    <span>3 Sets</span>
+                    <span>10-12 Reps</span>
+                </div>
+                <ol>
+                    <li>Set a weight bench to a 30-45 degree incline.</li>
+                    <li>Hold a dumbbell in each hand and sit back on the bench.</li>
+                    <li>Press the weights up over your chest, keeping your wrists stable.</li>
+                    <li>Lower the weights slowly until level with your chest, then press back up.</li>
+                </ol>
+                <div class="exercise-completion">
+                    <input type="checkbox" id="chest-2" class="exercise-checkbox">
+                    <label for="chest-2" class="checkbox-label">Mark as Complete</label>
+                </div>
+            </div>
+            <div class="exercise-image">
+                <img src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=500&q=80" alt="Incline Press" class="bw-img">
+            </div>
+        </section>
+
+        <section class="exercise-card">
+            <div class="exercise-content">
+                <h2>Dumbbell Flys</h2>
+                <div class="exercise-stats">
+                    <span>3 Sets</span>
+                    <span>12-15 Reps</span>
+                </div>
+                <ol>
+                    <li>Lie flat on a bench holding dumbbells above your chest, palms facing each other.</li>
+                    <li>Keep a slight bend in your elbows to protect the joints.</li>
+                    <li>Inhale and lower your arms in a wide arc until you feel a deep stretch.</li>
+                    <li>Exhale and squeeze your chest to bring the weights back to the center.</li>
+                </ol>
+                <div class="exercise-completion">
+                    <input type="checkbox" id="chest-3" class="exercise-checkbox">
+                    <label for="chest-3" class="checkbox-label">Mark as Complete</label>
+                </div>
+            </div>
+            <div class="exercise-image">
+                <img src="https://images.unsplash.com/photo-1583454155184-870a1f63aebc?w=500&q=80" alt="Dumbbell Flys" class="bw-img">
+            </div>
+        </section>
+
+        <section class="exercise-card">
+            <div class="exercise-content">
+                <h2>Push Ups</h2>
+                <div class="exercise-stats">
+                    <span>3 Sets</span>
+                    <span>To Failure</span>
+                </div>
+                <ol>
+                    <li>Start in a high plank position with hands slightly wider than shoulders.</li>
+                    <li>Engage your core and keep your body in a straight line.</li>
+                    <li>Inhale as you lower your body until your chest is just above the floor.</li>
+                    <li>Exhale and push back up to the starting position.</li>
+                </ol>
+                <div class="exercise-completion">
+                    <input type="checkbox" id="chest-4" class="exercise-checkbox">
+                    <label for="chest-4" class="checkbox-label">Mark as Complete</label>
+                </div>
+            </div>
+            <div class="exercise-image">
+                <img src="https://img.freepik.com/free-photo/young-powerful-sportsman-training-push-ups-dark-wall_176420-537.jpg?w=740&q=80" alt="Push Ups" class="bw-img">
+            </div>
+        </section>
+
+        <div class="nav-container">
+            <a href="index.html" class="back-btn">← Back to Forge</a>
+        </div>
+    </main>
+
+</body>
+</html>

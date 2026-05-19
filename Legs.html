@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leg Day | Iron Forge Gym</title>
+    <link rel="stylesheet" href="Legs.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="workout-progress.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script defer src="workout-progress.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1>Leg <span class="accent">Training</span></h1>
+        <p>Build explosive power and massive strength in your lower body.</p>
+    </header>
+
+    <!-- Progress Bar -->
+    <div class="progress-container">
+        <div class="progress-header">
+            <h3>Routine Progress</h3>
+            <span class="progress-percentage" id="progress-percentage">0%</span>
+        </div>
+        <div class="progress-track">
+            <div class="progress-fill" id="progress-fill"></div>
+        </div>
+    </div>
+
+    <main>
+        <section class="exercise-card">
+            <div class="exercise-content">
+                <h2>Barbell Back Squats</h2>
+                <div class="exercise-stats">
+                    <span>4 Sets</span>
+                    <span>8-10 Reps</span>
+                </div>
+                <ol>
+                    <li>Place the barbell across your upper back, gripping it firmly with both hands.</li>
+                    <li>Feet should be shoulder-width apart, toes slightly pointed out.</li>
+                    <li>Inhale as you hinge at the hips and bend your knees until thighs are parallel to the floor.</li>
+                    <li>Exhale and drive through your heels to return to a standing position.</li>
+                </ol>
+                <div class="exercise-completion">
+                    <input type="checkbox" id="legs-1" class="exercise-checkbox">
+                    <label for="legs-1" class="checkbox-label">Mark as Complete</label>
+                </div>
+            </div>
+            <div class="exercise-image">
+                <img src="https://images.unsplash.com/photo-1574680096145-d05b474e2155?auto=format&fit=crop&q=80&w=500" alt="Back Squats" class="bw-img">
+            </div>
+        </section>
+
+        <section class="exercise-card">
+            <div class="exercise-content">
+                <h2>Walking Lunges</h2>
+                <div class="exercise-stats">
+                    <span>3 Sets</span>
+                    <span>12 Reps Per Leg</span>
+                </div>
+                <ol>
+                    <li>Stand tall with feet hip-width apart, holding dumbbells at your sides if desired.</li>
+                    <li>Take a large step forward with your right leg, lowering your hips until both knees are at 90 degrees.</li>
+                    <li>Ensure your front knee does not pass your toes and keep your torso upright.</li>
+                    <li>Push off your back foot and step forward to repeat on the other side.</li>
+                </ol>
+                <div class="exercise-completion">
+                    <input type="checkbox" id="legs-2" class="exercise-checkbox">
+                    <label for="legs-2" class="checkbox-label">Mark as Complete</label>
+                </div>
+            </div>
+            <div class="exercise-image">
+                <img src="https://app-media.fitbod.me/v2/3085/images/landscape/0_960x540.jpg" alt="Lunges" class="bw-img">
+            </div>
+        </section>
+
+        <section class="exercise-card">
+            <div class="exercise-content">
+                <h2>Machine Leg Press</h2>
+                <div class="exercise-stats">
+                    <span>3 Sets</span>
+                    <span>12-15 Reps</span>
+                </div>
+                <ol>
+                    <li>Sit in the machine and place your feet shoulder-width apart on the platform.</li>
+                    <li>Lower the platform slowly toward your chest until your knees are at a 90-degree angle.</li>
+                    <li>Exhale and push the platform away using your quads and glutes.</li>
+                    <li>Avoid locking your knees out completely at the top of the movement.</li>
+                </ol>
+                <div class="exercise-completion">
+                    <input type="checkbox" id="legs-3" class="exercise-checkbox">
+                    <label for="legs-3" class="checkbox-label">Mark as Complete</label>
+                </div>
+            </div>
+            <div class="exercise-image">
+                <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&q=80&w=500" alt="Leg Press" class="bw-img">
+            </div>
+        </section>
+
+        <section class="exercise-card">
+            <div class="exercise-content">
+                <h2>Dumbbell Romanian Deadlifts</h2>
+                <div class="exercise-stats">
+                    <span>3 Sets</span>
+                    <span>10-12 Reps</span>
+                </div>
+                <ol>
+                    <li>Stand with feet hip-width apart, holding dumbbells in front of your thighs.</li>
+                    <li>Hinge at your hips, pushing them back while keeping a very slight bend in your knees.</li>
+                    <li>Lower the weights along your shins until you feel a deep stretch in your hamstrings.</li>
+                    <li>Drive your hips forward to return to the starting position, squeezing your glutes.</li>
+                </ol>
+                <div class="exercise-completion">
+                    <input type="checkbox" id="legs-4" class="exercise-checkbox">
+                    <label for="legs-4" class="checkbox-label">Mark as Complete</label>
+                </div>
+            </div>
+            <div class="exercise-image">
+                <img src="https://images.unsplash.com/photo-1590487988256-9ed24133863e?auto=format&fit=crop&q=80&w=500" alt="Romanian Deadlifts" class="bw-img">
+            </div>
+        </section>
+        
+        <div style="text-align: center; margin-top: 2rem; margin-bottom: 4rem;">
+            <a href="index.html" class="back-btn">← Back to Forge</a>
+        </div>
+    </main>
+
+</body>
+</html>

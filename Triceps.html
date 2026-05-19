@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tricep Training | Iron Forge Gym</title>
+    <link rel="stylesheet" href="Triceps.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="workout-progress.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script defer src="workout-progress.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1>Tricep <span class="accent">Training</span></h1>
+        <p>Target the "horseshoe" muscle for massive arm thickness and pushing power.</p>
+    </header>
+
+    <!-- Progress Bar -->
+    <div class="progress-container">
+        <div class="progress-header">
+            <h3>Routine Progress</h3>
+            <span class="progress-percentage" id="progress-percentage">0%</span>
+        </div>
+        <div class="progress-track">
+            <div class="progress-fill" id="progress-fill"></div>
+        </div>
+    </div>
+
+    <main>
+        <section class="exercise-card">
+            <div class="exercise-content">
+                <h2>Tricep Dips</h2>
+                <div class="exercise-stats">
+                    <span>3 Sets</span>
+                    <span>10-15 Reps</span>
+                </div>
+                <ol>
+                    <li>Grip the parallel bars and push yourself up to the starting position with arms locked.</li>
+                    <li>Inhale and slowly lower your body by bending your elbows.</li>
+                    <li>Lower yourself until your elbows are at a 90-degree angle.</li>
+                    <li>Exhale and push back up powerfully to the starting position.</li>
+                </ol>
+                <div class="exercise-completion">
+                    <input type="checkbox" id="triceps-1" class="exercise-checkbox">
+                    <label for="triceps-1" class="checkbox-label">Mark as Complete</label>
+                </div>
+            </div>
+            <div class="exercise-image">
+                <img src="https://media.istockphoto.com/id/579755194/photo/fitness-man-doing-bench-triceps-dips-outdoors-while-working-out.jpg?s=612x612&w=0&k=20&c=Bx3kgkhnSvASw0D0NjjXTFzfjaoWyr9PIcBRE1R7q8g=" alt="Tricep Dips" class="bw-img">
+            </div>
+        </section>
+
+        <section class="exercise-card">
+            <div class="exercise-content">
+                <h2>Overhead Dumbbell Extensions</h2>
+                <div class="exercise-stats">
+                    <span>3 Sets</span>
+                    <span>12 Reps</span>
+                </div>
+                <ol>
+                    <li>Sit or stand tall, holding one dumbbell with both hands directly above your head.</li>
+                    <li>Lower the weight behind your head by bending only at the elbows.</li>
+                    <li>Keep your upper arms stationary and close to your ears.</li>
+                    <li>Exhale and use your triceps to extend your arms back to the starting position.</li>
+                </ol>
+                <div class="exercise-completion">
+                    <input type="checkbox" id="triceps-2" class="exercise-checkbox">
+                    <label for="triceps-2" class="checkbox-label">Mark as Complete</label>
+                </div>
+            </div>
+            <div class="exercise-image">
+                <img src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?auto=format&fit=crop&q=80&w=500" alt="Tricep Extensions" class="bw-img">
+            </div>
+        </section>
+
+        <section class="exercise-card">
+            <div class="exercise-content">
+                <h2>Cable Tricep Push-downs</h2>
+                <div class="exercise-stats">
+                    <span>3 Sets</span>
+                    <span>12-15 Reps</span>
+                </div>
+                <ol>
+                    <li>Attach a bar to the high pulley and grip it with palms facing down.</li>
+                    <li>Tuck your elbows into your ribs and keep them fixed there.</li>
+                    <li>Push the bar down until your arms are fully extended.</li>
+                    <li>Slowly return the bar to chest level, maintaining tension.</li>
+                </ol>
+                <div class="exercise-completion">
+                    <input type="checkbox" id="triceps-3" class="exercise-checkbox">
+                    <label for="triceps-3" class="checkbox-label">Mark as Complete</label>
+                </div>
+            </div>
+            <div class="exercise-image">
+                <img src="https://breakingmuscle.com/wp-content/uploads/2022/06/shutterstock_1995016451-1.jpg" alt="Tricep Pushdowns" class="bw-img">
+            </div>
+        </section>
+
+        <section class="exercise-card">
+            <div class="exercise-content">
+                <h2>Diamond Push-ups</h2>
+                <div class="exercise-stats">
+                    <span>3 Sets</span>
+                    <span>To Failure</span>
+                </div>
+                <ol>
+                    <li>Get into a push-up position but place your hands together under your chest.</li>
+                    <li>Form a diamond shape with your index fingers and thumbs.</li>
+                    <li>Lower your chest toward your hands while keeping elbows close to your body.</li>
+                    <li>Push back up to the start, squeezing your triceps at the top.</li>
+                </ol>
+                <div class="exercise-completion">
+                    <input type="checkbox" id="triceps-4" class="exercise-checkbox">
+                    <label for="triceps-4" class="checkbox-label">Mark as Complete</label>
+                </div>
+            </div>
+            <div class="exercise-image">
+                <img src="https://app-media.fitbod.me/v2/446/images/angles/0.jpg" alt="Diamond Push-ups" class="bw-img">
+            </div>
+        </section>
+        
+        <div style="text-align: center; margin-top: 2rem; margin-bottom: 4rem;">
+            <a href="index.html" class="back-btn">← Back to Forge</a>
+        </div>
+    </main>
+
+</body>
+</html>

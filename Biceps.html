@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bicep Training | Iron Forge Gym</title>
+    <link rel="stylesheet" href="Biceps.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="workout-progress.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script defer src="workout-progress.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1>Bicep <span class="accent">Training</span></h1>
+        <p>Build peak height and thickness with these essential arm movements.</p>
+    </header>
+
+    <!-- Progress Bar -->
+    <div class="progress-container">
+        <div class="progress-header">
+            <h3>Routine Progress</h3>
+            <span class="progress-percentage" id="progress-percentage">0%</span>
+        </div>
+        <div class="progress-track">
+            <div class="progress-fill" id="progress-fill"></div>
+        </div>
+    </div>
+
+    <main>
+        <section class="exercise-card">
+            <div class="exercise-content">
+                <h2>Standard Barbell Curls</h2>
+                <div class="exercise-stats">
+                    <span>3 Sets</span>
+                    <span>8-12 Reps</span>
+                </div>
+                <ol>
+                    <li>Stand tall with your feet shoulder-width apart, holding a barbell with an underhand grip.</li>
+                    <li>Keep your elbows tucked close to your torso at all times.</li>
+                    <li>Exhale and curl the weight toward your shoulders while contracting your biceps.</li>
+                    <li>Inhale and slowly lower the bar back to the starting position.</li>
+                </ol>
+                <div class="exercise-completion">
+                    <input type="checkbox" id="biceps-1" class="exercise-checkbox">
+                    <label for="biceps-1" class="checkbox-label">Mark as Complete</label>
+                </div>
+            </div>
+            <div class="exercise-image">
+                <img src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=500&q=80" alt="Barbell Curls" class="bw-img">
+            </div>
+        </section>
+
+        <section class="exercise-card">
+            <div class="exercise-content">
+                <h2>Dumbbell Hammer Curls</h2>
+                <div class="exercise-stats">
+                    <span>3 Sets</span>
+                    <span>10-12 Reps</span>
+                </div>
+                <ol>
+                    <li>Hold a dumbbell in each hand with a neutral grip (palms facing your body).</li>
+                    <li>Keep your upper arms stationary and curl the weight forward.</li>
+                    <li>Focus on the "peak" contraction at the top of the movement.</li>
+                    <li>Lower the dumbbells back down with control to the starting position.</li>
+                </ol>
+                <div class="exercise-completion">
+                    <input type="checkbox" id="biceps-2" class="exercise-checkbox">
+                    <label for="biceps-2" class="checkbox-label">Mark as Complete</label>
+                </div>
+            </div>
+            <div class="exercise-image">
+                <img src="https://app-media.fitbod.me/v2/158/images/landscape/0_960x540.jpg" alt="Hammer Curls" class="bw-img">
+            </div>
+        </section>
+
+        <section class="exercise-card">
+            <div class="exercise-content">
+                <h2>Concentration Curls</h2>
+                <div class="exercise-stats">
+                    <span>3 Sets</span>
+                    <span>12 Reps Per Arm</span>
+                </div>
+                <ol>
+                    <li>Sit on a bench with your legs spread and lean forward slightly.</li>
+                    <li>Rest your elbow against the inside of your thigh for stability.</li>
+                    <li>Curl the dumbbell up toward your chest, focusing solely on the bicep contraction.</li>
+                    <li>Slowly lower the weight back down and repeat for the other arm.</li>
+                </ol>
+                <div class="exercise-completion">
+                    <input type="checkbox" id="biceps-3" class="exercise-checkbox">
+                    <label for="biceps-3" class="checkbox-label">Mark as Complete</label>
+                </div>
+            </div>
+            <div class="exercise-image">
+                <img src="https://app-media.fitbod.me/v2/91/images/landscape/0_960x540.jpg" alt="Concentration Curls" class="bw-img">
+            </div>
+        </section>
+
+        <section class="exercise-card">
+            <div class="exercise-content">
+                <h2>Weighted Chin-Ups</h2>
+                <div class="exercise-stats">
+                    <span>3 Sets</span>
+                    <span>To Failure</span>
+                </div>
+                <ol>
+                    <li>Grab the pull-up bar with an underhand grip, hands shoulder-width apart.</li>
+                    <li>Pull your body upward until your chin is over the bar.</li>
+                    <li>Concentrate on using your biceps rather than just your back to pull.</li>
+                    <li>Lower yourself slowly until your arms are fully extended.</li>
+                </ol>
+                <div class="exercise-completion">
+                    <input type="checkbox" id="biceps-4" class="exercise-checkbox">
+                    <label for="biceps-4" class="checkbox-label">Mark as Complete</label>
+                </div>
+            </div>
+            <div class="exercise-image">
+                <img src="https://noregretspt.com.au/wp-content/uploads/2025/03/Chin-up-strength.jpg" alt="Chin Ups" class="bw-img">
+            </div>
+        </section>
+        
+        <div style="text-align: center; margin-top: 2rem; margin-bottom: 4rem;">
+            <a href="index.html" class="back-btn">← Back to Forge</a>
+        </div>
+    </main>
+
+</body>
+</html>

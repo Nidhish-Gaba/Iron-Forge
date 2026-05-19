@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iron Forge Gym | Register</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="login.css">
+    <script defer src="login.js"></script>
+</head>
+<body>
+    <main class="auth-shell">
+        <section class="auth-hero">
+            <div class="auth-hero__content">
+                <p class="eyebrow">Iron Forge Gym</p>
+                <h1>Train hard. Track progress. Stay locked in.</h1>
+                <p>Create your account to unlock personalised workout plans and track your progress.</p>
+            </div>
+        </section>
+
+        <section class="auth-card">
+            <h2 class="card-title">Create Account</h2>
+
+            <div class="notice" id="notice" aria-live="polite"></div>
+
+            <form id="registerForm" novalidate>
+                <label>
+                    Full Name
+                    <input type="text" id="name" name="name" placeholder="Name" autocomplete="name" />
+                </label>
+
+                <label>
+                    Age
+                    <input type="number" id="age" name="age" placeholder="e.g. 22" min="10" max="100" />
+                </label>
+
+                <label>
+                    Email Address
+                    <input type="email" id="email" name="email" placeholder="name@example.com" autocomplete="email" />
+                </label>
+
+                <button class="submit-btn" type="submit">Register</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
